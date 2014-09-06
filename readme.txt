@@ -4,7 +4,7 @@ Donate link: http://satrya.me/donate/
 Tags: recent posts, random posts, popular posts, thumbnails, widget, widgets, sidebar, excerpt, category, post tag, taxonomy, post type, post status, shortcode, multiple widgets
 Requires at least: 3.6
 Tested up to: 4.0
-Stable tag: 0.9.4
+Stable tag: 0.9.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -186,6 +186,9 @@ First, please uncheck the **Use Default Style** option then place the css code b
 }
 `
 
+= Why so many !important in the css code? =
+I know it's not good but I have a good reason, the `!important` is to make sure the built-in style compatible with all themes. But if you don't like it, you can turn of the **Use Default Styles** and remove all custom css code int the ** Custom CSS** box then create your own style.
+
 = Available filters =
 Default arguments
 `
@@ -262,7 +265,10 @@ after=""
 
 == Changelog ==
 
-= 0.9.4 -  =
+= 0.9.5 - 9/06/2014  =
+* Fixed: Custom css not saving ([issue](http://wordpress.org/support/topic/css-not-saving)). Props [bowoolley](http://www.respirando.net/) 
+
+= 0.9.4 - 9/06/2014  =
 * Tested for WordPress 4.0.
 * **The code is totally rewritten, please re-save or re-install the plugin if it doesn't work properly. I'm sorry for it.**
 * After some research, I decided to get back the `get_the_excerpt()` as the excerpt. But now you can easily to change it via filter. Please read [FAQ](http://wordpress.org/plugins/recent-posts-widget-extended/faq)
